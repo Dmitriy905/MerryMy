@@ -172,23 +172,55 @@ body._lock {
   text-align: center;
   display: inline-block;
   background: #F2EEEB;
-  border: 1px solid #000000;
-  box-shadow: 0px 3px 5px rgba(21, 1, 103, 0.33);
-  border-radius: 10px;
   color: #0A0909;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  transition: all 0.5s ease 0s;
+}
+@media (max-width: 767.98px) {
+  .btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    width: 150px;
+  }
+}
+@media (min-width: 991.98px) {
+  .btn:hover {
+    background: #0A0909;
+    color: #F2EEEB;
+    font-size: 19px;
+  }
 }
 .btn_w {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 22px;
   line-height: 50px;
   height: 50px;
   width: 168px;
   text-align: center;
   display: inline-block;
   border: 1px solid #F2EEEB;
-  box-shadow: 0px 3px 5px rgba(21, 1, 103, 0.33);
   border-radius: 10px;
   color: #F2EEEB;
+  transition: all 0.5s ease 0s;
+}
+@media (max-width: 767.98px) {
+  .btn_w {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    width: 150px;
+  }
+}
+@media (min-width: 991.98px) {
+  .btn_w:hover {
+    color: #0A0909;
+    background: #F2EEEB;
+    font-size: 19px;
+  }
 }
 
 .select {
@@ -677,7 +709,11 @@ ol.counter li:before {
   opacity: 1;
 }
 .popup._active .popup__body {
-  transition: all 0.3s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+  transform: scale(1);
+}
+.popup._active .templates-body {
+  transition: all 0.5s ease 0.2s;
   transform: scale(1);
 }
 .popup__content {
@@ -700,14 +736,34 @@ ol.counter li:before {
   max-width: 800px;
 }
 .popup__close {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
   z-index: 30;
   background: url("../img/icons/close.svg") 0 0 no-repeat;
+}
+
+.templates-body {
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  text-align: center;
+}
+
+.templates-image img {
+  max-width: 100%;
+}
+
+.error-text {
+  font-size: 26px;
+}
+@media (max-width: 1170px) {
+  .error-text {
+    font-size: calc(18px + 8 * ((100vw - 320px) / 850));
+  }
 }
 
 .header-fixed {
@@ -1185,30 +1241,114 @@ ol.counter li:before {
   background-color: #F2EEEB;
   z-index: 2;
 }
+@media (max-width: 767.98px) {
+  .templates__block {
+    display: block;
+    border: none;
+  }
+}
 .templates__image {
   width: 440px;
   border-radius: 15px;
+  display: block;
 }
 .templates__image img {
   width: 100%;
   border-radius: 15px;
 }
+@media (max-width: 991.98px) {
+  .templates__image {
+    width: 340px;
+    padding: 0px 10px 0px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .templates__image {
+    margin: 120px auto 20px auto;
+    width: 90%;
+  }
+}
 .templates__item {
-  width: 380px;
+  width: 430px;
   margin: 0 auto;
+  padding: 0px 20px;
+}
+@media (max-width: 767.98px) {
+  .templates__item {
+    width: 100%;
+    padding: 0;
+  }
 }
 .templates__name {
+  font-size: calc(25px + 15 * ((100vw - 320px) / 1600));
+  line-height: 110%;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 51px;
   text-align: center;
   color: #000000;
   margin: 65px 0px 45px 0px;
+}
+@media (max-width: 767.98px) {
+  .templates__name {
+    position: absolute;
+    top: -55px;
+    left: 55px;
+    margin: 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .templates__name {
+    left: 25px;
+  }
 }
 .templates__box {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 767.98px) {
+  .templates__box {
+    width: 410px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 479.98px) {
+  .templates__box {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+}
+.templates__btn {
+  width: 180px;
+}
+@media (max-width: 767.98px) {
+  .templates__btn {
+    width: 190px;
+  }
+}
+@media (max-width: 479.98px) {
+  .templates__btn:first-child {
+    margin: 10px 0px 0px 0px;
+  }
+}
+.templates__all {
+  font-size: 18px;
+  height: 22px;
+  color: #000;
+  width: 80px;
+  text-align: center;
+  display: none;
+}
+.templates__all:after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  border-radius: 50%;
+}
+
 .prices {
   margin-top: calc(50px + 50 * ((100vw - 320px) / 1600));
   margin-bottom: calc(50px + 50 * ((100vw - 320px) / 1600));
