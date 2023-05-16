@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Шаблоны</title>
+    <title>Анкета</title>
 
     <!-- META -->
     <meta charset="utf-8">
@@ -45,78 +45,93 @@
         </div>
 	</div>
 </header>
-        <main class="page all-templates">
-            <div class="all-templates__main">
-                <div class="all-templates__container">
-                    <h1 class="all-templates__title">Шаблоны</h1>
-                    <div class="all-templates__desc">Здесь Вы можите выбрать подходящий для Вас шаблон, просмотреть демо
-                        версию, а так же заказать его. </div>
-                    <div class="all-templates__information _anim-items _anim-no-hide">
-                        <div class="all-templates__subtitle">Информационный</div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/pink_dream" class="all-templates__btn btn">Демо версия</a>
-                                </div>
+        <main class="page survey">
+            <div class='survey__container _container'>
+                <h1 class="survey__title">Анкета</h1>
+                <div class="survey__desc">Выберите тот мокет что Вам подошел и заполните к нему поля</div>
+                <div class="survey__comtemt">
+                    <div class="survey__subtitle">ЗАПОЛНИТЕ АНКЕТУ</div>
+                    <form action="" class="survey__form form-survey">
+                        <div class="form-survey__about">
+                            <div class="form-survey__item">
+                                <label for="" class="label"> Контактные данные
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="* ФИО Жениха" data-value="" class="input" />
+                                </label>
+                            </div>
+                            <div class="form-survey__item">
+                                <label for="" class="label"> Ваше намер телефона
+                                    <input autocomplete="off" type="tel" name="form[]" placeholder="* ФИО Невесты" data-value="Телефон"
+                                        class="input _phone" />
+                                </label>
+                            </div>
+                            <div class="form-survey__item">
+                                <label for="" class="label"> Дата свадьбы
+                                    <input autocomplete="off" type="tel" name="form[]" data-value="Телефон"
+                                        class="input _data" />
+                                </label>
                             </div>
                         </div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/pink_dream" class="all-templates__btn btn">Демо версия</a>
+
+                        <div class="form-survey__tabs _tabs">
+                            <nav class="form-survey__nav">
+                                <div class="form-survey__items btn _tabs-item _active">Информационный</div>
+                                <div class="form-survey__items btn _tabs-item">Стандартный</div>
+                                <div class="form-survey__items btn _tabs-item">Премиум</div>
+                            </nav>
+                            <form action="" class="form-survey__body form-survey">
+                                <div class="form-survey__text">Lorem ipsum dolor sit amet, consectetur adipisicing  architecto? Eveniet explicabo perferendis vero consequatur quos quidem laudantium at non?</div>
+                                <div class="form-survey__block _tabs-block _active">
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">О нас</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">Программа</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">Место</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">Опрос</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/pink_dream" class="all-templates__btn btn">Демо версия</a>
+                                <div class="form-survey__block _tabs-block">
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">О нас</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">Программа</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">Место</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">Опрос</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">Пожелания</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
+                                    <div class="form-survey__item">
+                                        <div class="form-survey__subtitle">Контакты</div>
+                                        <textarea name="" placeholder="Сообщение" data-error="Заполните поле" class="massage _req" rows="8"></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="all-templates__standard _anim-items _anim-no-hide">
-                        <div class="all-templates__subtitle">Стандартный</div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/provence" class="all-templates__btn btn">Демо версия</a>
+                                <div class="form-survey__block _tabs-block">
+                                    Передайте свои пожелания нашему менеджеру
                                 </div>
-                            </div>
+                            </form>
                         </div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/provence" class="all-templates__btn btn">Демо версия</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/provence" class="all-templates__btn btn">Демо версия</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
+
+
                 </div>
             </div>
         </main>
