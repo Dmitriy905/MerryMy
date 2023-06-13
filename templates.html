@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Шаблоны</title>
+    <title>Главная</title>
 
     <!-- META -->
     <meta charset="utf-8">
@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="favicon.ico">
 
+    <link rel="preload" href="fonts/ZenKakuGothicAntique-Black.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/ZenKakuGothicAntique-Bold.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/ZenKakuGothicAntique-Medium.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/ZenKakuGothicAntique-Regular.woff2" as="font" crossorigin>
 
 </head>
 
@@ -33,231 +37,171 @@
                 <span></span>
             </div>
             <nav class="menu__body">
-                <a href="https://dmitriy905.github.io/MerryMy/" class="header__logo">Merry me <span>СВАДЕБНЫЕ САЙТЫ</span></a>
+                <a href="http://localhost:3000/" class="header__logo">Merry me <span>СВАДЕБНЫЕ САЙТЫ</span></a>
                 <ul class="menu__list">
-                    <li><a href="https://dmitriy905.github.io/MerryMy/" class="menu__link">ГЛАВНАЯ</a></li>
-                    <li><a href="https://dmitriy905.github.io/MerryMy/templates" class="menu__link">ШАБЛОНЫ</a></li>
-                    <li><a href="#prices" class="menu__link _goto-block">ЦЕНЫ</a></li>
-                    <li><a href="information" class="menu__link _goto-block">ИНФОРМАЦИЯ</a></li>
-                    <li><a href="" class="menu__link _popup-link">КОНТАКТЫ</a></li>
+                    <li><a href="http://localhost:3000/" class="menu__link">ГЛАВНАЯ</a></li>
+                    <li><a href="http://localhost:3000/templates.html" class="menu__link">ШАБЛОНЫ</a></li>
+                    <li><a href="http://localhost:3000/prices.html" class="menu__link">ЦЕНЫ</a></li>
+                    <li><a href="http://localhost:3000/information.html" class="menu__link">ИНФОРМАЦИЯ</a></li>
+                    <li><a href="#error" class="menu__link _popup-link">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
         </div>
 	</div>
-</header> 
-        <main class="page all-templates">
-            <div class="all-templates__main">
-                <div class="all-templates__container">
-                    <h1 class="all-templates__title">Шаблоны</h1>
-                    <div class="all-templates__desc">Здесь Вы можите выбрать подходящий для Вас шаблон, просмотреть демо
-                        версию, а так же заказать его. </div>
-                    <div class="all-templates__information _anim-items _anim-no-hide">
-                        <div class="all-templates__subtitle">Информационный</div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/pink_dream" class="all-templates__btn btn">Демо версия</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/pink_dream" class="all-templates__btn btn">Демо версия</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/pink_dream" class="all-templates__btn btn">Демо версия</a>
-                                </div>
-                            </div>
-                        </div>
+</header>
+        <main class="page templates">
+            <div class='templates__container _container'>
+                <div class="templates__title"> Шаблоны приглашений</div>
+                <div class="templates__text"> Вы выбираете шаблон, а мы его берем за основу для разработки, модернизируя
+                    его в соответствии с Вашими пожеланиями.
+                    Все предложенные дизайны являются нашей собственной разработкой.
+                    Мы продумываем всё до мелочей, чтобы Ваш свадебный сайт был идеальным.
+                    При желании мы можем разработать для Вас уникальный дизайн свадебного сайта.</div>
+                <div class="templates__item">
+                    <div class="templates__subtitle"> “Шебби шик”</div>
+                    <div class="templates__image">
+                        <a href="#templates-1" class="_popup-link"><img src="img/templates01.jpg" alt="" /></a>
                     </div>
-                    <div class="all-templates__standard _anim-items _anim-no-hide">
-                        <div class="all-templates__subtitle">Стандартный</div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/provence" class="all-templates__btn btn">Демо версия</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/provence" class="all-templates__btn btn">Демо версия</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="all-templates__block">
-                            <div class="all-templates__image"><img src="img/templates01.jpg" alt="" /></div>
-                            <div class="all-templates__item">
-                                <div class="all-templates__name">Корпоративные расследования</div>
-                                <div class="all-templates__box">
-                                    <a href="#error" class="all-templates__btn btn _popup-link">Заказать</a>
-                                    <a href="https://dmitriy905.github.io/MerryMy/provence" class="all-templates__btn btn">Демо версия</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="templates__row">
+                        <a href="#error" class="templates__btn btn_w _popup-link">Заказать</a>
+                        <a href="" class="templates__btn btn_w">Демо версия</a>
+                    </div>
+                </div>
+
+                <div class="templates__item">
+                    <div class="templates__subtitle">  “Эко”</div>
+                    <div class="templates__image">
+                        <a href="#templates-2" class="_popup-link"><img src="img/templates02.jpg" alt="" /></a>
+                    </div>
+                    <div class="templates__row">
+                        <a href="#error" class="templates__btn btn_w _popup-link">Заказать</a>
+                        <a href="" class="templates__btn btn_w ">Демо версия</a>
+                    </div>
+                </div>
+
+                <div class="templates__item">
+                    <div class="templates__subtitle">“Прованс”</div>
+                    <div class="templates__image">
+                        <a href="#templates-3" class="_popup-link"><img src="img/templates03.jpg" alt="" /></a>
+                    </div>
+                    <div class="templates__row">
+                        <a href="#error" class="templates__btn btn_w _popup-link">Заказать</a>
+                        <a href="" class="templates__btn btn_w">Демо версия</a>
+                    </div>
+                </div>
+                
+                <div class="templates__item">
+                    <div class="templates__subtitle"></div>
+                    <div class="templates__image">
+                        <a href="#templates-4" class="_popup-link"><img src="img/templates04.jpg" alt="" /></a>
+                    </div>
+                    <div class="templates__row">
+                        <a href="#error" class="templates__btn btn_w _popup-link">Заказать</a>
+                        <a href="" class="templates__btn btn_w">Демо версия</a>
+                    </div>
+                </div>
+
+                <div class="templates__item">
+                    <div class="templates__subtitle">  “Розовая мечта”</div>
+                    <div class="templates__image">
+                        <a href="#templates-5" class="_popup-link"><img src="img/templates05.jpg" alt="" /></a>
+                    </div>
+                    <div class="templates__row">
+                        <a href="#error" class="templates__btn btn_w _popup-link">Заказать</a>
+                        <a href="" class="templates__btn btn_w">Демо версия</a>
                     </div>
                 </div>
             </div>
         </main>
         <footer class="footer">
-    <div class="footer__container _container">
-        <div class="footer__block">
-            <div class="footer__row">
-                <div class="footer__column">
-                    <div class="footer__item">
-                        <div class="footer__logo">
-                            <a href="">
-                                Merry me
-                                <span>СВАДЕБНЫЕ САЙТЫ</span>
-                            </a>
-                            2022 Copyright
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__column">
-                    <div class="footer__item">
-                        <div class="footer__icons">
-                            <a href="" class="footer__icon">
-                                <img src="img/icons/whatsapp.svg" alt="" />
-                            </a>
-                            <a href="" class="footer__icon">
-                                <img src="img/icons/vk.svg" alt="" />
-                            </a>
-                            <a href="" class="footer__icon">
-                                <img src="img/icons/teleg.svg" alt="" />
-                            </a>
-                        </div>
-                        <a href="#feedback" class="footer__feedback _popup-link">Заказать звонок</a>
-                    </div>
-                </div>
+	<div class="footer__container _container">
+        <div class="footer__text">Для связи воспользуйтесь формой обратной связи, или любым удобным для Вас способом</div>
+        <div class="footer__icons">
+            <div class="footer__icon">
+                <img src="img/icons/vk.svg" alt="" />
+            </div>
+            <div class="footer__icon">
+                <img src="img/icons/fb.svg" alt="" />
+            </div>
+            <div class="footer__icon">
+                <img src="img/icons/telegram.svg" alt="" />
+            </div>
+            <div class="footer__icon">
+                <img src="img/icons/votsap.svg" alt="" />
             </div>
         </div>
-    </div>
+        <div class="footer__row">
+            <a href="" class="footer__logo">Merry me<span>СВАДЕБНЫЕ САЙТЫ</span></a>
+            <a href="" class="footer__rights">2022 Все права защищены </a>
+            <a href="tel:79151345853" class="footer__phone">+7 (915) 134 58 53</a>
+        </div>
+	</div>
 </footer>
     </div>
     <div class="popup popup_templates-1">
-    <div class="popup__content">
-        <div class="popup__body">
-            <div class="popup__close"></div>
+	<div class="popup__content">
+		<div class="templates-body">
+			<div class="popup__close"></div>
             <div class="templates-image">
                 <img src="img/templates-bg01.jpg" alt="" />
             </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
 <div class="popup popup_templates-2">
-    <div class="popup__content">
-        <div class="popup__body">
-            <div class="popup__close"></div>
+	<div class="popup__content">
+		<div class="templates-body">
+			<div class="popup__close"></div>
             <div class="templates-image">
-                <img src="img/templates-bg03.jpg" alt="" />
+                <img src="img/templates-bg02.jpg" alt="" />
             </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
 <div class="popup popup_templates-3">
-    <div class="popup__content">
-        <div class="popup__body">
-            <div class="popup__close"></div>
+	<div class="popup__content">
+		<div class="templates-body">
+			<div class="popup__close"></div>
             <div class="templates-image">
                 <img src="img/templates-bg03.jpg" alt="" />
             </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
 <div class="popup popup_templates-4">
-    <div class="popup__content">
-        <div class="popup__body">
-            <div class="popup__close"></div>
+	<div class="popup__content">
+		<div class="templates-body">
+			<div class="popup__close"></div>
             <div class="templates-image">
                 <img src="img/templates-bg04.jpg" alt="" />
             </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
 <div class="popup popup_templates-5">
-    <div class="popup__content">
-        <div class="popup__body">
-            <div class="popup__close"></div>
+	<div class="popup__content">
+		<div class="templates-body">
+			<div class="popup__close"></div>
             <div class="templates-image">
                 <img src="img/templates-bg05.jpg" alt="" />
             </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
 <div class="popup popup_error">
-    <div class="popup__content">
-        <div class="popup__body">
-            <div class="popup__close"></div>
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
             <div class="error-text">
                 В ближашее время будет доступно!
             </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="popup popup_question">
-    <div class="popup__content">
-        <div class="popup__body">
-            <div class="popup__close"></div>
-            <form action="" class="question__form">
-                <div class="question__title">Задать вопрос</div>
-                <div class="question__item">
-                    <input autocomplete="off" type="text" name="form[]" placeholder="Имя" data-value="" class="input-question" />
-                </div>
-                <div class="question__item">
-                    <input autocomplete="off" type="text" name="form[]" placeholder="E-mail" data-value="" class="input-question _email" />
-                </div>
-                <div class="question__item">
-                    <input autocomplete="off" type="text" name="form[]" placeholder="Телефон" data-value="" class="input-question _phone" />
-                </div>
-                <div class="question__item">
-                    <textarea name="form[message]" placeholder="Сообщение/Предложение/Вопрос" class="massage-question _req"
-                    rows="8"></textarea>
-                </div>
-                <button type="submit" class="question__btn btn">Отправить</button>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="popup popup_feedback">
-    <div class="popup__content">
-        <div class="popup__body">
-            <div class="popup__close"></div>
-            <form action="#" class="feedback__form">
-                <input autocomplete="off" type="text" name="form-feedback" data-value="" placeholder="Телефон" class="feedback__input input _phone" />
-                <button type="submit" class="feedback__btn btn">Заказать звонок</button>
-            </form>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
     <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
