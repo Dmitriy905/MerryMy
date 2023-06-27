@@ -839,9 +839,6 @@ textarea.input {
     padding: 30px 20px;
   }
 }
-.popup_question {
-  width: 100%;
-}
 .popup_question .popup__body {
   max-width: 800px;
   background: #F2EEEB;
@@ -881,6 +878,9 @@ textarea.input {
   }
 }
 
+.question__form {
+  width: 100%;
+}
 .question__title {
   font-weight: 500;
   font-size: 43px;
