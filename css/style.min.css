@@ -935,6 +935,7 @@ textarea.input {
 ._scroll {
   transform: translate(0px, -100%);
   opacity: 0;
+  background: #1e1d1d;
 }
 
 .header {
@@ -944,7 +945,6 @@ textarea.input {
   left: 0;
   z-index: 50;
   transition: all 0.5s ease 0s;
-  background: #1e1d1d;
   padding: 5px 0px 10px 0px;
   border-bottom: solid 1px #fff;
 }
@@ -963,12 +963,12 @@ textarea.input {
   z-index: 2;
 }
 .header__logo span {
-  font-family: "Playfair Display";
+  font-family: "Montserrat";
   text-align: center;
   display: block;
   font-style: normal;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 11px;
   color: #FFFFFF;
   margin: 9px 0px 0px 0px;
@@ -1043,6 +1043,15 @@ textarea.input {
     transform: translate(-50%, 0%);
     width: 100%;
   }
+}
+.menu__link._active {
+  color: #efd7c5;
+  opacity: 1;
+}
+.menu__link._active:after {
+  content: "";
+  transform: translate(-50%, 0%);
+  width: 100%;
 }
 
 .icon-menu {
@@ -4064,7 +4073,7 @@ textarea.in1-input {
 }
 .in1-menu__body._active {
   display: block;
-  left: -10px;
+  left: 0px;
 }
 
 .in1-menu__list {
@@ -4104,12 +4113,12 @@ textarea.in1-input {
     text-decoration: underline;
   }
 }
-.icon-menu {
+.in1-header__icon {
   display: none;
 }
 
 @media (max-width: 767.98px) {
-  .icon-menu {
+  .in1-header__icon {
     display: block;
     position: absolute;
     top: 18px;
@@ -4120,7 +4129,7 @@ textarea.in1-input {
     z-index: 5;
   }
 
-  .icon-menu span {
+  .in1-header__icon span {
     transition: all 0.3s ease 0s;
     top: calc(50% - 1px);
     left: 0px;
@@ -4130,25 +4139,25 @@ textarea.in1-input {
     background-color: #000;
   }
 
-  .icon-menu span:first-child {
+  .in1-header__icon span:first-child {
     top: 0px;
   }
 
-  .icon-menu span:last-child {
+  .in1-header__icon span:last-child {
     top: auto;
     bottom: 0px;
   }
 
-  .icon-menu._active span {
+  .in1-header__icon._active span {
     transform: scale(0);
   }
 
-  .icon-menu._active span:first-child {
+  .in1-header__icon._active span:first-child {
     transform: rotate(-45deg);
     top: calc(50% - 1px);
   }
 
-  .icon-menu._active span:last-child {
+  .in1-header__icon._active span:last-child {
     transform: rotate(45deg);
     bottom: calc(50% - 1px);
   }

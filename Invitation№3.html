@@ -24,24 +24,20 @@
 
 <body>
     <div class="in3-wrapper">
+        <!-- Header -->
         <header class="in3-header">
             <div class="in3-header__menu menu">
-                <div class="in3-header__icon icon-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
                 <nav class="in3-menu__body">
                     <ul class="in3-menu__list _swiper">
-                        <li><a href="#about" class="in3-menu__link _goto-block">О нас</a></li>
-                        <li><a href="#history" class="in3-menu__link _goto-block">Наша история</a></li>
-                        <li><a href="#order" class="in3-menu__link _goto-block">Распорядок дня</a></li>
-                        <li><a href="#place" class="in3-menu__link _goto-block">Место проведения</a></li>
-                        <li><a href="#survey" class="in3-menu__link _goto-block">Опрос</a></li>
-                        <li><a href="#wishes" class="in3-menu__link _goto-block">Пожелания</a></li>
-                        <li><a href="#book" class="in3-menu__link _goto-block">Книга пожеланий</a></li>
-                        <li><a href="#gallery" class="in3-menu__link _goto-block">Галерея</a></li>
-                        <li><a href="#contacts" class="in3-menu__link _goto-block">Контакты</a></li>
+                        <li><a href="#in3-about" class="in3-menu__link _goto-block">О нас</a></li>
+                        <li><a href="#in3-history" class="in3-menu__link _goto-block">Наша история</a></li>
+                        <li><a href="#in3-order" class="in3-menu__link _goto-block">Распорядок дня</a></li>
+                        <li><a href="#in3-place" class="in3-menu__link _goto-block">Место проведения</a></li>
+                        <li><a href="#in3-survey" class="in3-menu__link _goto-block">Опрос</a></li>
+                        <li><a href="#in3-wishes" class="in3-menu__link _goto-block">Пожелания</a></li>
+                        <li><a href="#in3-book" class="in3-menu__link _goto-block">Книга пожеланий</a></li>
+                        <li><a href="#in3-gallery" class="in3-menu__link _goto-block">Галерея</a></li>
+                        <li><a href="#in3-contacts" class="in3-menu__link _goto-block">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -57,6 +53,7 @@
                     Вами,
                     нашими самыми близкими людьми, своей радостью: Мы нашли своё счастье!
                     Судьба сделала нам прекрасный подарок, и мы устроим по этому поводу настоящий праздник!!!</div>
+                <!-- О нас -->
                 <strong class="in3-about">
                     <div class="in3-about__title in3-title">О нас</div>
                     <div class="in3-about__row">
@@ -94,6 +91,7 @@
                         </div>
                     </div>
                 </strong>
+                <!-- Наша история -->
                 <strong class="in3-history">
                     <div class="in3-history__title in3-title">Наша история</div>
                     <div class="in3-history__text">Как это банально не звучит, познакомились мы через интернет. Леша был
@@ -115,6 +113,7 @@
                         <img src="img/invitation№3/history.jpg" alt="" />
                     </div>
                 </strong>
+                <!-- Распорядок дня -->
                 <strong class="in3-order">
                     <div class="in3-order__title in3-title">Распорядок дня</div>
                     <div class="in3-order__block">
@@ -165,6 +164,7 @@
                         </div>
                     </div>
                 </strong>
+                <!-- Место проведения -->
                 <strong class="in3-place">
                     <div class="in3-place__title in3-title">Место проведения</div>
                     <div class="in3-place__row">
@@ -205,13 +205,14 @@
                         </div>
                     </div>
                 </strong>
+                <!-- Опрос -->
                 <strong class="in3-survey">
                     <div class="in3-survey__title in3-title">Опрос</div>
                     <div class="in3-survey__desc">Чтобы всё прошло идеально, как для нас, так и для Вас. ответьте
                         пожалуйста
                         на
                         несколько вопросов:</div>
-                    <form action="" class="in3-survey__form">
+                    <form action="" class="in3-survey__form _goto-error">
                         <div class="in3-survey__row">
                             <div class="in3-survey__column">
                                 <div class="in3-survey__subtitle">Планируете ли вы прийти к нам на праздник?</div>
@@ -277,6 +278,7 @@
                         </div>
                     </form>
                 </strong>
+                <!-- Пожелания -->
                 <strong class="in3-wishes">
                     <div class="in3-wishes__title in3-title">Пожелания</div>
                     <div class="in3-wishes__row">
@@ -297,6 +299,7 @@
                     </div>
                 </strong>
             </div>
+            <!-- Книга пожеланий -->
             <strong class="in3-book">
                 <span></span>
                 <div class='book__container _in3-container'>
@@ -309,7 +312,7 @@
                             <form action="" class="in3-book__form">
                                 <div class="in3-book__item">
                                     <input type="text" name="form-name_book" data-value="Ф.И.О"
-                                        class="in3-book__item input_g _req" />
+                                        class="in3-book__item in3-input_g _req" />
                                     <div class="in3-book__message">
                                         Текст
                                         <textarea name="form[massage]" class="in3-massage-text _req"
@@ -367,20 +370,21 @@
                     </div>
                 </div>
             </strong>
+            <!-- Галерея -->
             <strong class="in3-gallery">
                 <div class='gallery__container _in3-container'>
                     <div class="in3-gallery__title in3-title">Галерея</div>
                     <div class="in3-gallery__subtitle">Фото</div>
                     <div class="in3-gallery__grid">
-                        <a href="#gallery" class="in3-gallery__item _popup-link"><img
+                        <a href="#in3-gallery" class="in3-gallery__item _popup-link"><img
                                 src="img/invitation№3/gallery01.jpg" alt="" /></a>
-                        <a href="#gallery" class="in3-gallery__item _popup-link"><img
+                        <a href="#in3-gallery" class="in3-gallery__item _popup-link"><img
                                 src="img/invitation№3/gallery06.jpg" alt="" /></a>
-                        <a href="#gallery" class="in3-gallery__item _popup-link"><img
+                        <a href="#in3-gallery" class="in3-gallery__item _popup-link"><img
                                 src="img/invitation№3/gallery03.jpg" alt="" /></a>
-                        <a href="#gallery" class="in3-gallery__item _popup-link"><img
+                        <a href="#in3-gallery" class="in3-gallery__item _popup-link"><img
                                 src="img/invitation№3/gallery04.jpg" alt="" /></a>
-                        <a href="#gallery" class="in3-gallery__item _popup-link"><img
+                        <a href="#in3-gallery" class="in3-gallery__item _popup-link"><img
                                 src="img/invitation№3/gallery05.jpg" alt="" /></a>
                     </div>
                     <div class="in3-gallery__subtitle">Видео</div>
@@ -397,6 +401,7 @@
                     </div>
                 </div>
             </strong>
+            <!-- Контакты -->
             <strong class="in3-contacts">
                 <div class="in3-contacts__title in3-title">Контакты</div>
                 <div class="in3-contacts__desc">По всем вопросам, связанным с трансфером гостей, торжественным вечером и
@@ -405,7 +410,147 @@
             </strong>
         </main>
     </div>
+    
+    <div class="popup popup_templates-1">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg01.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="popup popup_templates-2">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg03.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_templates-3">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg03.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_templates-4">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg04.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_templates-5">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg05.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_error">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="error-text">
+                В ближашее время будет доступно!
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup popup_question">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <form action="" class="question__form">
+                <div class="question__title">Задать вопрос</div>
+                <div class="question__item">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Имя" data-value="" class="input-question" />
+                </div>
+                <div class="question__item">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="E-mail" data-value="" class="input-question _email" />
+                </div>
+                <div class="question__item">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Телефон" data-value="" class="input-question _phone" />
+                </div>
+                <div class="question__item">
+                    <textarea name="form[message]" placeholder="Сообщение/Предложение/Вопрос" class="massage-question _req"
+                    rows="8"></textarea>
+                </div>
+                <button type="submit" class="question__btn btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_feedback">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <form action="#" class="feedback__form">
+                <input autocomplete="off" type="text" name="form-feedback" data-value="" placeholder="Телефон" class="feedback__input input _phone" />
+                <button type="submit" class="feedback__btn btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_in3-gallery">
+	<div class="popup__content">
+		<div class="popup__body _gallery">
+			<div class="popup__close"></div>
+            <a href="/img/invitation№3/gallery01.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery01.jpg" alt="" />
+            </a>
+            <a href="/img/invitation№3/gallery05.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery05.jpg" alt="" />
+            </a>
+            <a href="/img/invitation№3/gallery03.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery03.jpg" alt="" />
+            </a>
+            <a href="/img/invitation№3/gallery04.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery04.jpg" alt="" />
+            </a>
+            <a href="/img/invitation№3/gallery05.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery05.jpg" alt="" />
+            </a>
+            <a href="/img/invitation№3/gallery01.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery01.jpg" alt="" />
+            </a>
+            <a href="/img/invitation№3/gallery03.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery03.jpg" alt="" />
+            </a>
+            <a href="/img/invitation№3/gallery04.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery04.jpg" alt="" />
+            </a>
+            <a href="/img/invitation№3/gallery05.jpg" class="popup__image gallery">
+                <img src="img/invitation№3/gallery05.jpg" alt="" />
+            </a>
+		</div>
+	</div>
+</div>
+    <script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 
 </html>
