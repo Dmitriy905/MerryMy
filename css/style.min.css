@@ -277,8 +277,8 @@ body._lock {
   text-align: center;
   display: inline-block;
   background: #F2EEEB;
-  color: #0A0909;
-  border: 1px solid #000000;
+  color: #1e1d1d;
+  border: 1px solid #535353;
   border-radius: 10px;
   transition: all 0.5s ease 0s;
   cursor: pointer;
@@ -519,7 +519,7 @@ textarea.input {
   right: -1000%;
 }
 
-.massage {
+.message {
   width: 100%;
   height: 100px;
   resize: none;
@@ -528,19 +528,19 @@ textarea.input {
   font-weight: 400;
   padding: 13px 12px;
   background: rgba(255, 255, 255, 0);
-  border: 1px solid #000;
+  border: 1px solid #535353;
   border-radius: 6px;
   color: #000000;
 }
-.massage._error {
+.message._error {
   box-shadow: 0 0 8px red;
 }
 @media (max-width: 767.98px) {
-  .massage {
+  .message {
     font-size: 16px;
   }
 }
-.massage_bg {
+.message_bg {
   width: 100%;
   height: 300px;
   resize: none;
@@ -549,20 +549,20 @@ textarea.input {
   font-weight: 400;
   padding: 13px 12px;
   background: rgba(255, 255, 255, 0);
-  border: 1px solid #000;
+  border: 1px solid #535353;
   border-radius: 6px;
   color: #000000;
 }
-.massage_bg._error {
+.message_bg._error {
   box-shadow: 0 0 8px red;
 }
 @media (max-width: 767.98px) {
-  .massage_bg {
+  .message_bg {
     font-size: 16px;
   }
 }
 
-.massage-question {
+.message-question {
   width: 100%;
   min-height: 255px;
   padding: 20px 10px;
@@ -574,11 +574,11 @@ textarea.input {
   color: #000000;
   margin: 25px 0px;
 }
-.massage-question._error {
+.message-question._error {
   box-shadow: 0 0 8px red;
 }
 @media (max-width: 767.98px) {
-  .massage-question {
+  .message-question {
     font-size: 16px;
     margin: 15px 0px;
     padding: 15px 8px;
@@ -1438,12 +1438,13 @@ textarea.input {
 .advant__block {
   width: 345px;
   height: 345px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 0px 13px 63px 13px;
   position: relative;
-  border: 1px solid #000000;
+  border: 1px solid #d9d9d9;
   background-color: #F2EEEB;
   z-index: 2;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
   transform: translate(-110%, 0px);
   transition: all 0.8s ease 0s;
 }
@@ -1604,7 +1605,8 @@ textarea.input {
 .templates__block {
   display: flex;
   border-radius: 15px;
-  border: 1px solid #000;
+  border: 1px solid #d9d9d9;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
   margin: 0px 0px 40px 0px;
 }
 @media (max-width: 991.98px) {
@@ -1846,11 +1848,12 @@ textarea.input {
   }
 }
 .prices__item {
-  border: 1px solid #000000;
-  border-radius: 15px;
+  border-radius: 12px;
   max-width: 440px;
   background-color: #F2EEEB;
   z-index: 2;
+  border: 1px solid #d9d9d9;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.8s ease 0s;
   transform: rotateY(-90deg);
 }
@@ -1872,7 +1875,7 @@ textarea.input {
 }
 .prices__top {
   padding: 30px 40px 15px 45px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #535353;
 }
 @media (max-width: 991.98px) {
   .prices__top {
@@ -5959,7 +5962,7 @@ textarea.in2-input {
     font-size: 20px;
   }
 }
-.in3-massage-text {
+.in3-message-text {
   width: 100%;
   height: 320px;
   resize: none;
@@ -5973,12 +5976,12 @@ textarea.in2-input {
   border-radius: 5px;
 }
 
-.in3-massage-text._error {
+.in3-message-text._error {
   border: 2px solid #901a08;
 }
 
 @media (max-width: 767.98px) {
-  .in3-massage-text {
+  .in3-message-text {
     font-size: 16px;
   }
 }
@@ -10946,7 +10949,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 3;
 }
 
-.in4-massage-text {
+.in4-message-text {
   width: 100%;
   height: 100px;
   resize: none;
@@ -10960,11 +10963,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #000;
   margin: 10px 0px 0px 0px;
 }
-.in4-massage-text._error {
+.in4-message-text._error {
   box-shadow: 0 0 8px rgb(199, 1, 1);
 }
 @media (max-width: 991.98px) {
-  .in4-massage-text {
+  .in4-message-text {
     font-size: 18px;
     line-height: 21px;
   }
