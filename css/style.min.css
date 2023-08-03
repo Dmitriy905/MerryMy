@@ -13600,12 +13600,12 @@ textarea.in7-input {
   }
 }
 
-.in7-gifts__form .in7-gifts__btn {
+.in7-gifts__form._active .in7-gifts__btn {
   cursor: not-allowed;
   background: rgba(115, 115, 115, 0.917);
 }
 @media (min-width: 991.98px) {
-  .in7-gifts__form .in7-gifts__btn:hover {
+  .in7-gifts__form._active .in7-gifts__btn:hover {
     border-radius: 0px !important;
     box-shadow: none !important;
   }
