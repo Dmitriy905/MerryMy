@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <title>Анкета</title>
 
@@ -18,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="img/favicon/favicon4.svg">
 
 
 </head>
@@ -26,27 +25,26 @@
 <body>
     <div class="wrapper home">
         <header class="header">
-            <div class="header__container">
-                <div class="header__menu menu">
-                    <div class="header__icon icon-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <nav class="menu__body">
-                        <a href="https://dmitriy905.github.io/MerryMy/" class="header__logo">Merry me <span>СВАДЕБНЫЕ
-                                САЙТЫ</span></a>
-                        <ul class="menu__list">
-                            <li><a href="https://dmitriy905.github.io/MerryMy/" class="menu__link">ГЛАВНАЯ</a></li>
-                            <li><a href="#templates" class="menu__link _goto-block">ШАБЛОНЫ</a></li>
-                            <li><a href="#prices" class="menu__link _goto-block">ЦЕНЫ</a></li>
-                            <li><a href="#information" class="menu__link _goto-block">ИНФОРМАЦИЯ</a></li>
-                            <li><a href="" class="menu__link _popup-link">КОНТАКТЫ</a></li>
-                        </ul>
-                    </nav>
-                </div>
+	<div class="header__container">
+        <div class="header__menu menu">
+            <div class="header__icon icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </header>
+            <nav class="menu__body">
+                <a href="https://dmitriy905.github.io/MerryMy/" class="header__logo">Merry me <span>СВАДЕБНЫЕ САЙТЫ</span></a>
+                <ul class="menu__list">
+                    <li><a href="https://dmitriy905.github.io/MerryMy/" class="menu__link">ГЛАВНАЯ</a></li>
+                    <li><a href="#templates" class="menu__link _goto-block">ШАБЛОНЫ</a></li>
+                    <li><a href="#prices" class="menu__link _goto-block">ЦЕНЫ</a></li>
+                    <li><a href="#information" class="menu__link _goto-block">ИНФОРМАЦИЯ</a></li>
+                    <li><a href="" class="menu__link _popup-link">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+	</div>
+</header> 
         <main class="page survey">
             <div class='survey__container _container'>
                 <h1 class="survey__title">Анкета</h1>
@@ -60,34 +58,34 @@
                                 <div class="form-survey__column">
                                     <div class="form-survey__item">
                                         <input autocomplete="off" type="text" name="form[]" placeholder="* ФИО Жениха"
-                                            data-value="" class="input _req" />
+                                            data-value="" class="input _req">
                                     </div>
                                     <div class="form-survey__item">
                                         <input autocomplete="off" type="text" name="form[]" placeholder="* ФИО Жениха"
-                                            data-value="Телефон" class="input _req" />
+                                            data-value="Телефон" class="input _req">
                                     </div>
                                 </div>
                                 <div class="form-survey__column">
                                     <div class="form-survey__item">
                                         <input autocomplete="off" type="tel" name="form[]"
-                                            placeholder="* Телефон Жениха" data-value="" class="input _phone _req" />
+                                            placeholder="* Телефон Жениха" data-value="" class="input _phone _req">
                                     </div>
                                     <div class="form-survey__item">
                                         <input autocomplete="off" type="tel" name="form[]"
                                             placeholder="* Телефон Невесты" data-value="Телефон"
-                                            class="input _phone _req" />
+                                            class="input _phone _req">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-survey__item">
                                 <input autocomplete="off" type="text" name="form[]" placeholder="* E-mail" data-value=""
-                                    class="input _req" />
+                                    class="input _req">
                             </div>
 
                             <div class="form-survey__item">
                                 <input autocomplete="off" type="date" name="form[]" placeholder="Дата свадьбы"
-                                    data-value="" class="input" />
+                                    data-value="" class="input">
                             </div>
                         </div>
 
@@ -103,7 +101,7 @@
 
                             <div class="form-survey__block _tabs-block _active">
                                 <input type="text" value="Информационный" name="input-survey-items" data-value=""
-                                    class="input-survey-items" />
+                                    class="input-survey-items">
                                 <div class="form-survey__item-message">
                                     <div class="form-survey__label">Информация о Вашей истории любви
                                         <span class="form-survey__info">
@@ -164,12 +162,19 @@
                                 <div class="form-survey__item-message">
                                     <div class="form-survey__label">Ваши фото
                                         <span class="form-survey__info">
-                                            Необходимы для наполнения сайта 3-5 шт. размером 1500-1920 px по ширине в
+                                            Необходимы для наполнения сайта 3-5 шт. размером 1920×1080 px по ширине в
                                             формате
                                         </span>
                                     </div>
-                                    <textarea name="" placeholder="Прекрепите фото" data-error="Заполните поле"
-                                        class="message " rows="8"></textarea>
+                                    <div class="file">
+                                        <div class="file__item">
+                                            <input multiple id="formImage" accept=".jpg, .png, .gif" type="file" name="image "
+                                                class="file__input">
+                                            <div class="file__button">Сюда можете закрепить несколько Ваши фото для заполнения
+                                                приглашения</div>
+                                        </div>
+                                        <div id="formPreview" class="file__preview"></div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -177,7 +182,7 @@
 
                             <div class="form-survey__block _tabs-block">
                                 <input type="text" value="Стандартный" name="input-survey-items" data-value=""
-                                    class="input-survey-items" />
+                                    class="input-survey-items">
                                 <div class="form-survey__item-message">
                                     <div class="form-survey__label">Информация о Вашей истории любви
                                         <span class="form-survey__info">
@@ -269,14 +274,19 @@
                                 <div class="form-survey__item-message">
                                     <div class="form-survey__label">Ваши фото
                                         <span class="form-survey__info">
-                                            Необходимы для наполнения сайта 3-5 шт. размером 1500-1920 px по ширине в
-                                            формате.<br>
-                                            Около 10 фото совместных фото для заполнения галереи. После свадьбы в
-                                            галерею можно добавить Ваши фото и видео с торжества.
+                                            Необходимы для наполнения сайта 3-5 шт. размером 1920×1080 px по ширине в
+                                            формате
                                         </span>
                                     </div>
-                                    <textarea name="" placeholder="Прекрепите фото" data-error="Заполните поле"
-                                        class="message " rows="8"></textarea>
+                                    <div class="file">
+                                        <div class="file__item">
+                                            <input multiple id="formImage" accept=".jpg, .png, .gif" type="file" name="image "
+                                                class="file__input">
+                                            <div class="file__button">Сюда можете закрепить несколько Ваши фото для заполнения
+                                                приглашения</div>
+                                        </div>
+                                        <div id="formPreview" class="file__preview"></div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -284,7 +294,7 @@
 
                             <div class="form-survey__block _tabs-block">
                                 <input type="text" value="Премиум" name="input-survey-items" data-value=""
-                                    class="input-survey-items" />
+                                    class="input-survey-items">
                                 <div class="form-survey__item-message">
                                     <div class="form-survey__label"> Опишите каким Вы хотите видеть Ваш сайт:
                                         <span class="form-survey__info">
@@ -310,185 +320,230 @@
             </div>
         </main>
         <footer class="footer">
-            <div class="footer__container _container">
-                <div class="footer__block">
-                    <div class="footer__row">
-                        <div class="footer__column">
-                            <div class="footer__item">
-                                <div class="footer__logo">
-                                    <a href="">
-                                        Merry me
-                                        <span>СВАДЕБНЫЕ САЙТЫ</span>
-                                    </a>
-                                    2022 Copyright
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer__column">
-                            <div class="footer__item">
-                                <div class="footer__icons">
-                                    <a href="" class="footer__icon">
-                                        <img src="img/icons/whatsapp.svg" alt="" />
-                                    </a>
-                                    <a href="" class="footer__icon">
-                                        <img src="img/icons/vk.svg" alt="" />
-                                    </a>
-                                    <a href="" class="footer__icon">
-                                        <img src="img/icons/teleg.svg" alt="" />
-                                    </a>
-                                </div>
-                                <a href="#feedback" class="footer__feedback _popup-link">Заказать звонок</a>
-                            </div>
+    <div class="footer__container _container">
+        <div class="footer__block">
+            <div class="footer__row">
+                <div class="footer__column">
+                    <div class="footer__item">
+                        <div class="footer__logo">
+                            <a href="">
+                                Merry me
+                                <span>СВАДЕБНЫЕ САЙТЫ</span>
+                            </a>
+                            2022 Copyright
                         </div>
                     </div>
                 </div>
+                <div class="footer__column">
+                    <div class="footer__item">
+                        <div class="footer__icons">
+                            <a href="" class="footer__icon">
+                                <img src="img/icons/whatsapp.svg" alt="">
+                            </a>
+                            <a href="" class="footer__icon">
+                                <img src="img/icons/vk.svg" alt="">
+                            </a>
+                            <a href="" class="footer__icon">
+                                <img src="img/icons/teleg.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="#feedback" class="footer__feedback _popup-link">Заказать звонок</a>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+</footer>
     </div>
     <div class="popup popup_templates-1">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                <div class="templates-image">
-                    <img src="img/templates-bg01.jpg" alt="" />
-                </div>
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg01.jpg" alt="">
             </div>
         </div>
     </div>
+</div>
 
-    <div class="popup popup_templates-2">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                <div class="templates-image">
-                    <img src="img/templates-bg03.jpg" alt="" />
-                </div>
+<div class="popup popup_templates-2">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg03.jpg" alt="">
             </div>
         </div>
     </div>
+</div>
 
-    <div class="popup popup_templates-3">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                <div class="templates-image">
-                    <img src="img/templates-bg03.jpg" alt="" />
-                </div>
+<div class="popup popup_templates-3">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg03.jpg" alt="">
             </div>
         </div>
     </div>
+</div>
 
-    <div class="popup popup_templates-4">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                <div class="templates-image">
-                    <img src="img/templates-bg04.jpg" alt="" />
-                </div>
+<div class="popup popup_templates-4">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg04.jpg" alt="">
             </div>
         </div>
     </div>
+</div>
 
-    <div class="popup popup_templates-5">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                <div class="templates-image">
-                    <img src="img/templates-bg05.jpg" alt="" />
-                </div>
+<div class="popup popup_templates-5">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="templates-image">
+                <img src="img/templates-bg05.jpg" alt="">
             </div>
         </div>
     </div>
+</div>
 
-    <div class="popup popup_error">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                <div class="error-text">
-                    В ближашее время будет доступно!
-                </div>
+<div class="popup popup_error">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="error-text">
+                В ближашее время будет доступно!
             </div>
         </div>
     </div>
+</div>
 
 
-    <div class="popup popup_question">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                <form action="" class="question__form">
-                    <div class="question__title">Задать вопрос</div>
-                    <div class="question__item">
-                        <input autocomplete="off" type="text" name="form[]" placeholder="Имя" data-value=""
-                            class="input-question" />
+<div class="popup popup_question">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <form action="" class="question__form">
+                <div class="question__title">Задать вопрос</div>
+                <div class="question__item">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Имя" data-value=""
+                        class="input-question">
+                </div>
+                <div class="question__item">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="E-mail" data-value=""
+                        class="input-question _email">
+                </div>
+                <div class="question__item">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Телефон" data-value=""
+                        class="input-question _phone">
+                </div>
+                <div class="question__item">
+                    <textarea name="form[message]" placeholder="Сообщение/Предложение/Вопрос"
+                        class="message-question _req" rows="8"></textarea>
+                </div>
+                <button type="submit" class="question__btn btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_feedback">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <form action="#" class="feedback__form">
+                <input autocomplete="off" type="text" name="form-feedback" data-value="" placeholder="Телефон"
+                    class="feedback__input input _phone">
+                <button type="submit" class="feedback__btn btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_in3-gallery-popup">
+    <div class="popup__content">
+        <div class="popup__body _gallery">
+            <div class="popup__close"></div>
+            <a href="/img/invitation_no_3/gallery01.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery01.jpg" alt="">
+            </a>
+            <a href="/img/invitation_no_3/gallery05.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery05.jpg" alt="">
+            </a>
+            <a href="/img/invitation_no_3/gallery03.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery03.jpg" alt="">
+            </a>
+            <a href="/img/invitation_no_3/gallery04.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery04.jpg" alt="">
+            </a>
+            <a href="/img/invitation_no_3/gallery05.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery05.jpg" alt="">
+            </a>
+            <a href="/img/invitation_no_3/gallery01.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery01.jpg" alt="">
+            </a>
+            <a href="/img/invitation_no_3/gallery03.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery03.jpg" alt="">
+            </a>
+            <a href="/img/invitation_no_3/gallery04.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery04.jpg" alt="">
+            </a>
+            <a href="/img/invitation_no_3/gallery05.jpg" class="in3-gallery-popup__image">
+                <img src="img/invitation_no_3/gallery05.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup_in7-gifts">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <div class="in7-gifts__title">Выберите подарок:</div>
+            <form action=""></form>
+            <form id="giftForm" action="" class="in7-gifts__form">
+                <div class="in7-gifts__content">
+                    <div class="in7-gifts__item">
+                        <input id="gift1" type="radio" name="gift" value="gift1" class="in7-input-gift">
+                        <label for="gift1" class="in7-label-gift"><img src="img/invitation_no_7/gift01.png" alt=""></label>
                     </div>
-                    <div class="question__item">
-                        <input autocomplete="off" type="text" name="form[]" placeholder="E-mail" data-value=""
-                            class="input-question _email" />
+                    <div class="in7-gifts__item">
+                        <input id="gift2" type="radio" name="gift" value="gift2" class="in7-input-gift">
+                        <label for="gift2" class="in7-label-gift"><img src="img/invitation_no_7/gift02.png" alt=""></label>
                     </div>
-                    <div class="question__item">
-                        <input autocomplete="off" type="text" name="form[]" placeholder="Телефон" data-value=""
-                            class="input-question _phone" />
+                    <div class="in7-gifts__item">
+                        <input id="gift3" type="radio" name="gift" value="gift3" class="in7-input-gift">
+                        <label for="gift3" class="in7-label-gift"><img src="img/invitation_no_7/gift03.png" alt=""></label>
                     </div>
-                    <div class="question__item">
-                        <textarea name="form[message]" placeholder="Сообщение/Предложение/Вопрос"
-                            class="message-question _req" rows="8"></textarea>
+                    <div class="in7-gifts__item">
+                        <input id="gift4" type="radio" name="gift" value="gift4" class="in7-input-gift">
+                        <label for="gift4" class="in7-label-gift"> <img src="img/invitation_no_7/gift04.png" alt=""></label>
                     </div>
-                    <button type="submit" class="question__btn btn">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
+                    <div class="in7-gifts__item">
+                        <input id="gift5" type="radio" name="gift" value="gift5" class="in7-input-gift">
+                        <label for="gift5" class="in7-label-gift"><img src="img/invitation_no_7/gift05.png" alt=""></label>
+                    </div>
+                    <div class="in7-gifts__item">
+                        <input id="gift6" type="radio" name="gift" value="gift6" class="in7-input-gift">
+                        <label for="gift6" class="in7-label-gift"><img src="img/invitation_no_7/gift06.png" alt=""></label>
+                    </div>
+                </div>
+                <input class="in7-gifts__btn" type="submit" value="Отправить">
+            </form>
 
-    <div class="popup popup_feedback">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                <form action="#" class="feedback__form">
-                    <input autocomplete="off" type="text" name="form-feedback" data-value="" placeholder="Телефон"
-                        class="feedback__input input _phone" />
-                    <button type="submit" class="feedback__btn btn">Заказать звонок</button>
-                </form>
+            <div id="selectedGifts">
+                <div class="selectedGiftsText">Выбранные подарки:</div>
+                <ul id="selectedGiftsList"></ul>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="popup popup_in3-gallery-popup">
-        <div class="popup__content">
-            <div class="popup__body _gallery">
-                <div class="popup__close"></div>
-                <a href="/img/invitation№3/gallery01.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery01.jpg" alt="" />
-                </a>
-                <a href="/img/invitation№3/gallery05.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery05.jpg" alt="" />
-                </a>
-                <a href="/img/invitation№3/gallery03.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery03.jpg" alt="" />
-                </a>
-                <a href="/img/invitation№3/gallery04.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery04.jpg" alt="" />
-                </a>
-                <a href="/img/invitation№3/gallery05.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery05.jpg" alt="" />
-                </a>
-                <a href="/img/invitation№3/gallery01.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery01.jpg" alt="" />
-                </a>
-                <a href="/img/invitation№3/gallery03.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery03.jpg" alt="" />
-                </a>
-                <a href="/img/invitation№3/gallery04.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery04.jpg" alt="" />
-                </a>
-                <a href="/img/invitation№3/gallery05.jpg" class="in3-gallery-popup__image">
-                    <img src="img/invitation№3/gallery05.jpg" alt="" />
-                </a>
-            </div>
-        </div>
-    </div>
     <script src="js/vendors.min.js"></script>
-    <script src="js/app.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 
 </html>
